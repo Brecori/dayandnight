@@ -281,7 +281,7 @@ ul, li{
 .bannerpage {
     display: flex;
     flex-direction: row;
-    width: 85%;
+    width: 80%;
     margin: 6rem auto;
 }
 
@@ -289,14 +289,61 @@ ul, li{
     display: flex;
     flex-direction: column;
     width: 50%;
+    
 }
 
 .carrosselone {
-    width: 43%;
-    margin: 0 0 0 9rem;
+    width: 50%;
+    padding-left: 5rem;
+    padding-bottom: 6rem;
+   
 }
 
 .bannertitle {
     font-size: 3rem;
 }
 
+.btn {
+    color: white !important;
+    border: #7453FC 1px solid !important;
+    border-bottom: white 2px solid !important;
+    border-radius: 70px !important;
+    padding: .7rem 2rem !important;
+    margin: 0 .5rem !important;
+}
+
+.btn:hover {
+    background-color: #7453FC !important;
+}
+
+.btn-danger {
+    color: white !important;
+    background-color: #7453FC !important;
+    
+    border-bottom: white -1px solid !important;
+    border-radius: 70px !important;
+    padding: .7rem 2rem !important;
+    margin: 0 .5rem !important;
+}
+
+.btn-danger:hover {
+    background-color: white !important;
+    color: #7453FC !important;
+    border: none !important;
+}
+
+.browse {
+    color: #7453FC;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.browseborder {
+    border-top: black 2px solid;
+    margin: 0 37rem;
+    margin-top: 8rem;
+}
+
+.spancategories {
+    color: black;
+}
