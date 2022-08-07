@@ -1,6 +1,7 @@
-:root {
-    --roxo: var(#7453FC);
-} 
+:root{
+    --roxo: #7453FC;
+    --text-color-black: #000;
+}
 
 .dots-3 {
   height: 40px;
@@ -35,11 +36,6 @@
 .whitefont {
     color: white;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -49,24 +45,43 @@ body{
 header{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .header-white{
     background-color: #fff;
 }
 
+.header-black{
+    background-color: #242424;
+}
+
+.nav-color{
+    font-weight: 600;
+    color: var(--text-color-black) !important;
+}
+
 .resize{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin: 2rem;
     width: 80%;
     border-radius: 70px;
 }
 
+.btn-home{
+    border: 1px solid #7453FC;
+    background-color: var(--roxo);
+    padding: .4rem .8rem .4rem .8rem;
+    border-radius: 70px;
+    color: #Fff !important;
+    font-weight: 600;
+}
+
 nav{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -76,9 +91,10 @@ nav a{
 
 ul, li{
     display: flex;
-    margin: 0 .5rem 0 .5rem;
+    align-items: center !important;
+    margin-left: 3rem;
+    list-style: none;
 }
-
 
 .toggleWrapper {
     color: white;
