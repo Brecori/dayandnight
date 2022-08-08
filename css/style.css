@@ -1,6 +1,7 @@
 :root{
     --roxo: #7453FC;
-    --text-color-black: #000;
+    --text-color-black: #000000;
+    --text-color-white: #e4e4e4;
 }
 
 .dots-3 {
@@ -29,12 +30,17 @@
     background-image: url(../images/banner-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 130vh;
-    z-index: -5;
 }
 
-.whitefont {
-    color: white;
+.white-font {
+    color: var(--text-color-white) !important;
+
+}
+
+.black-font{
+  color: var(--text-color-black) !important;
 }
 
 body{
@@ -50,19 +56,18 @@ header{
 
 .header-white{
     background-color: #fff;
+    transition: .5s;
 }
 
 .header-black{
     background-color: #242424;
+    transition: .5s;
 }
 
-.nav-color{
-    font-weight: 600;
-    color: var(--text-color-black) !important;
-}
 
 .resize{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
     margin: 2rem;
@@ -80,20 +85,28 @@ header{
 }
 
 nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
 }
 
 nav a{
     text-decoration: none;
 }
 
+li a{
+  font-weight: 500;
+}
+
 ul, li{
     display: flex;
     align-items: center !important;
-    margin-left: 3rem;
     list-style: none;
+    justify-content: space-between;
+}
+ul{
+  width: 100%;
 }
 
 .toggleWrapper {
@@ -293,7 +306,6 @@ ul, li{
 
 .bannerpage {
     display: flex;
-    flex-direction: row;
     width: 80%;
     margin: 6rem auto;
 }
@@ -301,7 +313,7 @@ ul, li{
 .textbanner {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 55%;
     
 }
 
@@ -309,11 +321,11 @@ ul, li{
     width: 50%;
     padding-left: 5rem;
     padding-bottom: 6rem;
-   
+
 }
 
 .bannertitle {
-    font-size: 3rem;
+    font-size: 3.1rem;
 }
 
 .btn {
@@ -360,3 +372,19 @@ ul, li{
 .spancategories {
     color: black;
 }
+
+
+.background-main-white{
+  background: radial-gradient(circle, rgb(255, 254, 254) 0%, rgb(197, 197, 197) 100%);
+}
+
+
+.purple-border{
+  border-bottom: 3px var(--roxo) solid;
+  width: 10rem;
+}
+
+.font-purple{
+  color: var(--roxo);
+}
+
