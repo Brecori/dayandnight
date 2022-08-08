@@ -76,25 +76,12 @@ header{
 }
 
 .btn-home{
-    transition: .3s;
+    border: 1px solid #7453FC;
+    background-color: var(--roxo);
     padding: .4rem .8rem .4rem .8rem;
     border-radius: 70px;
+    color: #Fff !important;
     font-weight: 600;
-    color: black ;
-}
-
-.btn-homeone {
-    transition: .3s;
-    padding: .4rem .8rem .4rem .8rem;
-    border-radius: 70px;
-    font-weight: 600;
-    background-color: var(--roxo);
-    color: white !important;
-}
-
-.btn-home:hover {
-    background-color: var(--roxo);
-    color: white !important;
 }
 
 nav{
@@ -389,13 +376,13 @@ ul{
 
 .background-main-white{
   background: radial-gradient(circle, rgb(255, 254, 254) 0%, rgb(197, 197, 197) 100%);
-  transition: .5s;
 }
 
-.background-main-black {
+.background-main-black{
   background: radial-gradient(circle, rgba(66,66,66,1) 40%, rgba(36,36,36,1) 100%);
   transition: .5s;
 }
+
 
 .purple-border{
   border-bottom: 3px var(--roxo) solid;
@@ -440,7 +427,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9b9b9b;
+  background-color: #fff;
   border-radius: 100%;
   width: 3rem;
   height: 3rem;

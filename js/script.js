@@ -4,8 +4,8 @@ $("#dn").change(function() {
         $("#header").removeClass("header-white");
         $("li, a").addClass("white-font");
         $("li, a").removeClass("black-font");
-        $(".img-circleblack").removeClass(".img-circleblack");
-        $(".img-circleblack").addClass(".img-circlewhite");
+        $(".img-circle").removeClass("img-circle-black");
+        $(".img-circle").addClass("img-circle-white");
         $("#main-background").addClass("background-main-black");
         $("#main-background").removeClass("background-main-white");
         $("#main-background").addClass("white-font");
@@ -15,8 +15,8 @@ $("#dn").change(function() {
         $("#header").removeClass("header-black");
         $("li, a").addClass("black-font");
         $("li, a").removeClass("white-font");
-        $(".img-circleblack").removeClass(".img-circlewhite");
-        $(".img-circleblack").addClass(".img-circleblack");
+        $(".img-circle").removeClass("img-circle-white");
+        $(".img-circle").addClass("img-circle-black");
         $("#main-background").removeClass("background-main-black");
         $("#main-background").addClass("background-main-white");
         $("#main-background").removeClass("white-font");
