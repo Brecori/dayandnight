@@ -388,3 +388,43 @@ ul{
   color: var(--roxo);
 }
 
+.itens-nft{
+  width: 80%;
+}
+
+.item-nft{
+  width: 14%;
+  height: 10rem;
+  background: rgba(185, 185, 185, 0.31);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(189, 174, 174, 1)
+}
+
+.item-nft h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.img-circle-black{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.img-circle-white{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9b9b9b;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
