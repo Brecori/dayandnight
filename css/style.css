@@ -76,12 +76,25 @@ header{
 }
 
 .btn-home{
-    border: 1px solid #7453FC;
-    background-color: var(--roxo);
+    transition: .3s;
     padding: .4rem .8rem .4rem .8rem;
     border-radius: 70px;
-    color: #Fff !important;
     font-weight: 600;
+    color: black ;
+}
+
+.btn-homeone {
+    transition: .3s;
+    padding: .4rem .8rem .4rem .8rem;
+    border-radius: 70px;
+    font-weight: 600;
+    background-color: var(--roxo);
+    color: white !important;
+}
+
+.btn-home:hover {
+    background-color: var(--roxo);
+    color: white !important;
 }
 
 nav{
@@ -376,8 +389,13 @@ ul{
 
 .background-main-white{
   background: radial-gradient(circle, rgb(255, 254, 254) 0%, rgb(197, 197, 197) 100%);
+  transition: .5s;
 }
 
+.background-main-black {
+  background: radial-gradient(circle, rgba(66,66,66,1) 40%, rgba(36,36,36,1) 100%);
+  transition: .5s;
+}
 
 .purple-border{
   border-bottom: 3px var(--roxo) solid;
