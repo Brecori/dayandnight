@@ -419,6 +419,11 @@ color: #Fff !important;
   width: 7rem;
 }
 
+.border-purple {
+  border-top: 2px var(--roxo) solid;
+  width: 7rem;
+}
+
 .font-purple{
   color: var(--roxo);
 }
@@ -487,4 +492,46 @@ color: #Fff !important;
   width: 3rem;
   height: 3rem;
   padding: 2rem;
+}
+
+.btn:active {
+  background-color: var(--roxo);
+}
+
+.btn-primary {
+  background-color: transparent !important;
+  border: none !important;
+  color: black !important;
+  padding: .5rem !important;
+  width: fit-content !important;
+  height: auto !important; 
+  margin: 0rem 1rem!important;
+}
+
+.mx-5 {
+  margin: 0rem 14rem;
+}
+
+.cardbone {
+  background: radial-gradient(circle, rgba(66,66,66,1) 40%, rgba(36,36,36,1) 100%);
+  border-radius: 20px;
+  width: fit-content;
+  height: auto;
+  border: 1px wheat solid;
+}
+
+.cardbone img {
+  border-radius: 20px;
+}
+
+.cardbone a {
+  color: var(--roxo);
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
 }
