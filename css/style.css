@@ -36,7 +36,7 @@
 
 .white-font {
     color: var(--text-color-white) !important;
-  transition: .5s;
+
 }
 
 .black-font{
@@ -83,6 +83,18 @@ header{
     border-radius: 70px;
     color: #Fff !important;
     font-weight: 600;
+}
+
+.btn-homeone{
+    padding: .4rem .8rem .4rem .8rem;
+    border-radius: 70px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-homeone:hover {
+  background-color: var(--roxo);
+  color: #Fff !important;
 }
 
 nav{
@@ -345,8 +357,8 @@ ul{
 .btn-danger {
     color: white !important;
     background-color: #7453FC !important;
-    
-    border-bottom: white -1px solid !important;
+    border: 1px solid transparent!important;
+    border-bottom: white 2px solid !important;
     border-radius: 70px !important;
     padding: .7rem 2rem !important;
     margin: 0 .5rem !important;
@@ -355,7 +367,6 @@ ul{
 .btn-danger:hover {
     background-color: white !important;
     color: #7453FC !important;
-    border: none !important;
 }
 
 .btn-homeone{
@@ -389,6 +400,7 @@ color: #Fff !important;
 
 .background-main-white{
   background: radial-gradient(circle, rgb(255, 254, 254) 0%, rgb(197, 197, 197) 100%);
+  transition: .5s;
 }
 
 .background-main-black{
@@ -400,6 +412,11 @@ color: #Fff !important;
 .purple-border{
   border-bottom: 3px var(--roxo) solid;
   width: 10rem;
+}
+
+.white-border{
+  border-top: 2px var(--text-color-white) solid;
+  width: 7rem;
 }
 
 .font-purple{
@@ -444,4 +461,30 @@ color: #Fff !important;
   border-radius: 100%;
   width: 3rem;
   height: 3rem;
+}
+
+.background-main-purple {
+  background: linear-gradient(145deg, rgba(117,85,252,1) 0%, rgba(186,128,255,1) 100%);
+}
+
+.container-wtv {
+  width: 80%;
+  margin: 2rem auto 4.5rem;
+}
+
+.createnft{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.img-circle-white-one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  padding: 2rem;
 }
