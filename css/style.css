@@ -36,11 +36,12 @@
 
 .white-font {
     color: var(--text-color-white) !important;
-
+  transition: .5s;
 }
 
 .black-font{
   color: var(--text-color-black) !important;
+  transition: .5s;
 }
 
 body{
@@ -357,6 +358,18 @@ ul{
     border: none !important;
 }
 
+.btn-homeone{
+  padding: .4rem .8rem .4rem .8rem;
+  border-radius: 70px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-homeone:hover {
+background-color: var(--roxo);
+color: #Fff !important;
+}
+
 .browse {
     color: #7453FC;
     font-size: 2rem;
@@ -432,4 +445,3 @@ ul{
   width: 3rem;
   height: 3rem;
 }
-
