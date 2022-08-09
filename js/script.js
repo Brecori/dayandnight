@@ -53,4 +53,40 @@ window.onscroll = function() {
     }
 
 
-    
+    var myVar;
+    var bodybg = document.getElementById("bodybg");
+
+    function loaderpage() {
+        myVar = setTimeout(showPage, 0);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        bodybg.classList.remove("bg-black");
+        document.getElementById("myDiv").style.display = "block";
+    }
+
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            dots:false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }         
+            
+        })
+    });
