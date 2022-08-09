@@ -36,11 +36,13 @@
 
 .white-font {
     color: var(--text-color-white) !important;
+    transition: .5s;
 
 }
 
 .black-font{
   color: var(--text-color-black) !important;
+  transition: .5s;
 }
 
 body{
@@ -82,6 +84,18 @@ header{
     border-radius: 70px;
     color: #Fff !important;
     font-weight: 600;
+}
+
+.btn-homeone{
+    padding: .4rem .8rem .4rem .8rem;
+    border-radius: 70px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-homeone:hover {
+  background-color: var(--roxo);
+  color: #Fff !important;
 }
 
 nav{
@@ -376,6 +390,7 @@ ul{
 
 .background-main-white{
   background: radial-gradient(circle, rgb(255, 254, 254) 0%, rgb(197, 197, 197) 100%);
+  transition: .5s;
 }
 
 .background-main-black{
@@ -387,6 +402,13 @@ ul{
 .purple-border{
   border-bottom: 3px var(--roxo) solid;
   width: 10rem;
+}
+
+.white-border{
+  border-bottom: 2px var(--text-color-white) solid;
+  width: 7rem;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .font-purple{
@@ -433,3 +455,35 @@ ul{
   height: 3rem;
 }
 
+.background-main-purple {
+  background: radial-gradient(circle, rgba(135,103,255,1) 25%, rgba(116,83,252,1) 100%);
+}
+
+.container-wtv {
+  width: 80%;
+  margin: 2rem auto 4.5rem;
+}
+
+.createbtn {
+  position: absolute;
+  right: 100px;
+  top: 1410px;
+}
+
+.borderwt {
+  border-left: 1px var(--text-color-white) solid;
+  width: 1rem;
+  padding-top: 15rem;
+  margin-left: .2rem;
+}
+
+.img-circle-white-one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  padding: 2rem;
+}
