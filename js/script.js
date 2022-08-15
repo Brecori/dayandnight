@@ -56,7 +56,7 @@ window.onscroll = function() {
     var bodybg = document.getElementById("bodybg");
 
     function loaderpage() {
-        myVar = setTimeout(showPage, 0);
+        myVar = setTimeout(showPage, 500);
     }
 
     function showPage() {
