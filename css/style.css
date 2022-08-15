@@ -625,3 +625,17 @@ span.img-text {
 span.img-text:hover {
   color: #2caae1;
 }
+
+::-webkit-scrollbar{
+  width: 13px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(0deg, rgb(107, 51, 172) 0%, rgba(59,0,80,1) 100%);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track{
+  background: #363636;
+}
