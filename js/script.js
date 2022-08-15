@@ -10,7 +10,14 @@ $("#dn").change(function() {
         $("#main-background").removeClass("background-main-white");
         $("#main-background").addClass("white-font");
         $("#main-background").removeClass("black-font");
+        $("#market").addClass("white-font");
+        $("#market").removeClass("black-font");
+        $("#market").addClass("background-main-black");
+        $("#market").removeClass("background-main-white");
+
     }else{//Dia
+
+
         $("#header").addClass("header-white");
         $("#header").removeClass("header-black");
         $("li, a").addClass("black-font");
@@ -21,6 +28,10 @@ $("#dn").change(function() {
         $("#main-background").addClass("background-main-white");
         $("#main-background").removeClass("white-font");
         $("#main-background").addClass("black-font");
+        $("#market").addClass("black-font");
+        $("#market").removeClass("white-font");
+        $("#market").addClass("background-main-white");
+        $("#market").removeClass("background-main-black");
     }
 });
 
@@ -89,3 +100,16 @@ window.onscroll = function() {
             
         })
     });
+
+$(document).ready(function(){
+    var $btns = $('.btn').click(function() {
+        if (this.id == 'all') {
+          $('#parent > div').fadeIn(450);
+        } else {
+          var $el = $('.' + this.id).fadeIn(450);
+          $('#parent > div').not($el).hide();
+        }
+        $btns.removeClass('active-btn');
+        $(this).addClass('active-btn');
+      })
+})

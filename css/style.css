@@ -515,9 +515,10 @@ color: #Fff !important;
 .cardbone {
   background: radial-gradient(circle, rgba(66,66,66,1) 40%, rgba(36,36,36,1) 100%);
   border-radius: 20px;
-  width: fit-content;
+  width: 20%;
   height: auto;
   border: 1px wheat solid;
+  display: flex;
 }
 
 .cardbone img {
@@ -578,6 +579,7 @@ span.img-text:hover {
   color: #2caae1;
 }
 
+<<<<<<< HEAD
 ::-webkit-scrollbar{
   width: 13px;
   height: 20px;
@@ -590,4 +592,9 @@ span.img-text:hover {
 
 ::-webkit-scrollbar-track{
   background: #363636;
+=======
+.active-btn {
+  background-color: #7453FC !important;
+  border-color: #7453FC !important;
+>>>>>>> 15d24bd8e8ea3fc0cb3151c9d77827748b12124f
 }
