@@ -233,17 +233,17 @@
         <div class="container-fluid background-main-white pt-3">
             <div class="container-wtv pt-5 d-flex createnft flex-column">
                 <div class="d-flex justify-content-end" id="myBtnContainer">
-                    <div class="btn btn-primary" onclick="filterSelection('all')">All Items</div>
-                    <div class="btn btn-primary" onclick="filterSelection('music')">Music Art</div>
-                    <div class="btn btn-primary" onclick="filterSelection('digital')">Digital Art</div>
-                    <div class="btn btn-primary" onclick="filterSelection('blockchain')">Blockchain</div>
-                    <div class="btn btn-primary" onclick="filterSelection('virtual')">Virtual</div>
+                    <button class="btn btn-primary active" id="all">All Items</button>
+                    <button class="btn btn-primary" id="a">Music Art</button>
+                    <button class="btn btn-primary" id="b">Digital Art</button>
+                    <button class="btn btn-primary" id="c">Blockchain</button>
+                    <button class="btn btn-primary" id="d">Virtual</button>
                 </div>
                 <h2 class=""><span class="border-purple font-purple">Items</span> Currently In The Market.</h2>
             </div>
-            <div class="row d-flex overflow-hidden">
+            <div class="row d-flex" id="parent">
 
-                <div class="container col-sm-12 col-lg-4 d-flex cardbone p-5 white-font music filterDiv">
+                <div class="container col-sm-12 col-lg-4 cardbone p-5 white-font a">
                     <div class="img-fluid me-3"><img src="./images/Caveira.jpg" alt=""></div>
                     <div class="d-flex flex-column">
                         <h4>Music Art Super Item</h4>
@@ -275,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="container col-12 col-sm-12 col-md-4 d-flex cardbone p-5 white-font digital filterDiv">
+                <div class="container col-12 col-sm-12 col-md-4 cardbone p-5 white-font b">
                     <div class="img-fluid me-3"><img src="./images/Caveira.jpg" alt=""></div>
                     <div class="d-flex flex-column">
                         <h4>Digital Crypto Artwork</h4>
@@ -308,9 +308,9 @@
                 </div>
                 
             </div>
-            <div class="row d-flex">
+                <div class="row d-flex" id="parent">
 
-                <div class="container col-sm-12 col-lg-4 d-flex cardbone p-5 white-font mt-3 blockchain filterDiv">
+                <div class="container col-sm-12 col-lg-4 cardbone p-5 white-font mt-3 c">
                     <div class="img-fluid me-3"><img src="./images/Caveira.jpg" alt=""></div>
                     <div class="d-flex flex-column">
                         <h4>Blockchain Item One</h4>
@@ -342,7 +342,7 @@
                     </div>
                 </div>
 
-                <div class="container col-12 col-sm-12 col-md-4 d-flex cardbone p-5 white-font mt-3 filterDiv virtual">
+                <div class="container col-12 col-sm-12 col-md-4 cardbone p-5 white-font mt-3 d">
                     <div class="img-fluid me-3"><img src="./images/Caveira.jpg" alt=""></div>
                     <div class="d-flex flex-column">
                         <h4>Virtual Currency Art</h4>
@@ -375,9 +375,9 @@
                 </div>
                 
             </div>
-            <div class="row d-flex">
+            <div class="row d-flex" id="parent">
 
-                <div class="container col-sm-12 col-lg-4 d-flex cardbone p-5 white-font mt-3 filterDiv digital">
+                <div class="container col-sm-12 col-lg-4 cardbone p-5 white-font mt-3 b">
                     <div class="img-fluid me-3"><img src="./images/Caveira.jpg" alt=""></div>
                     <div class="d-flex flex-column">
                         <h4>Digital Art Item</h4>
@@ -409,7 +409,7 @@
                     </div>
                 </div>
 
-                <div class="container col-12 col-sm-12 col-md-4 d-flex cardbone p-5 white-font mt-3 filterDiv music blockchain">
+                <div class="container col-12 col-sm-12 col-md-4 cardbone p-5 white-font mt-3 a c">
                     <div class="img-fluid me-3"><img src="./images/Caveira.jpg" alt=""></div>
                     <div class="d-flex flex-column">
                         <h4>Blockchain Music Design</h4>
