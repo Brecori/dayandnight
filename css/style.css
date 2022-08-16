@@ -778,6 +778,10 @@ footer {
     text-align: center;
     padding-bottom: 1rem;
   }
+
+  .carrosselone {
+    visibility: hidden;
+  }
   
   .btn-primary {
     font-size: .8rem !important;
