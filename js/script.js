@@ -101,7 +101,7 @@ window.onscroll = function() {
     
 // Inicio loader page 
     function loaderpage() {
-        myVar = setTimeout(showPage, 0);
+        myVar = setTimeout(showPage, 500);
     }
 
     function showPage() {
