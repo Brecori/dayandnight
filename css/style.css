@@ -31,12 +31,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 130vh;
+    height: 100vh;
 }
 
 .white-font {
     color: var(--text-color-white) !important;
-
+    transition: .5s;
 }
 
 .black-font{
@@ -429,11 +429,12 @@ color: #Fff !important;
 }
 
 .itens-nft{
-  width: 80%;
+  min-width: 80%;
+  flex-wrap: wrap;
 }
 
 .item-nft{
-  width: 14%;
+  max-width:14%!important;
   height: 10rem;
   background: rgba(185, 185, 185, 0.31);
   border-radius: 16px;
@@ -501,11 +502,21 @@ color: #Fff !important;
 .btn-primary {
   background-color: transparent !important;
   border: none !important;
-  color: black !important;
   padding: .5rem !important;
   width: fit-content !important;
   height: auto !important; 
   margin: 0rem 1rem!important;
+  color: black !important;
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  border: none !important;
+  padding: .5rem !important;
+  width: fit-content !important;
+  height: auto !important; 
+  margin: 0rem 1rem!important;
+  color: white !important;
 }
 
 .mx-5 {
@@ -515,10 +526,12 @@ color: #Fff !important;
 .cardbone {
   background: radial-gradient(circle, rgba(66,66,66,1) 40%, rgba(36,36,36,1) 100%);
   border-radius: 20px;
-  width: 20%;
-  height: auto;
+  width: 28rem;
+  margin: 1rem 6rem;
+  height: 30rem;
   border: 1px wheat solid;
   display: flex;
+
 }
 
 .cardbone img {
@@ -553,62 +566,14 @@ color: #Fff !important;
 
 .border-botton{
   border-bottom: 1px solid rgba(185, 185, 185, 1);
-  width: 17rem;
+  width: 90%;
   text-align: center;
 }
 
 .text-ethereum{
-  max-width: 100%;
+  width: 95%;
 }
 
-
-.carousel-wrap {
-  width: 1000px;
-  margin: auto;
-  position: relative;
-}
-.owl-carousel .owl-nav{
-  overflow: hidden;
-  height: 0px;
-}
-
-.owl-theme .owl-dots .owl-dot.active span, 
-.owl-theme .owl-dots .owl-dot:hover span {
-    background: #2caae1;
-}
-
-
-.owl-carousel .item {
-    text-align: center;
-}
-.owl-carousel .nav-btn{
-    height: 47px;
-    position: absolute;
-    width: 26px;
-    cursor: pointer;
-    top: 100px !important;
-}
-
-.owl-carousel .owl-prev.disabled,
-.owl-carousel .owl-next.disabled{
-  pointer-events: none;
-  opacity: 0.2;
-}
-
-.owl-carousel .prev-slide{
-    background: url(nav-icon.png) no-repeat scroll 0 0;
-    left: -33px;
-}
-.owl-carousel .next-slide{
-    background: url(nav-icon.png) no-repeat scroll -24px 0px;
-    right: -33px;
-}
-.owl-carousel .prev-slide:hover{
-   background-position: 0px -53px;
-}
-.owl-carousel .next-slide:hover{
-  background-position: -24px -53px;
-}
 
 span.img-text {
   text-decoration: none;
@@ -623,11 +588,233 @@ span.img-text {
   display: block;
   text-transform: capitalize;
 }
+
 span.img-text:hover {
   color: #2caae1;
+}
+
+
+::-webkit-scrollbar{
+  width: 13px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(0deg, rgb(107, 51, 172) 0%, rgba(59,0,80,1) 100%);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track{
+  background: #363636;
 }
 
 .active-btn {
   background-color: #7453FC !important;
   border-color: #7453FC !important;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(145deg, rgba(117,85,252,1) 0%, rgba(186,128,255,1) 100%);
+}
+
+.icon{
+  color: white;
+  font-size: 2rem;
+}
+
+.icon{
+  font-size: 2rem;
+}
+
+.scrollup {
+  position: fixed;
+  z-index:99999;
+  width: 3rem;
+  height: 3rem;
+  right: 2rem;
+  bottom: 1rem;
+  color: #7453FC;
+  border: none;
+  background-color: rgba(97, 97, 97, 0.549) ;
+  font-size: 1.8rem;
+  border-radius: 10rem;
+  transition: .3s;
+}
+
+.scrollup:hover {
+  color: white;
+  background-color: #7453FC;
+}
+
+
+.sociais{
+  width: 30%;
+}
+
+.fa-github{
+  transition: .5s;
+}
+
+.fa-instagram{
+  transition: .5s;
+  padding: 0 1.5px;
+}
+
+.fa-whatsapp{
+  transition: .5s;
+}
+
+.fa-linkedin{
+  transition: .5s;
+}
+
+
+.fa-github:hover{
+  color:#000;
+  background:#fff;
+  border-radius:100%;
+}
+
+.fa-instagram:hover{
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  border-radius:7px;
+}
+
+.fa-whatsapp:hover{
+  background:#34af23;
+  border-radius:100%;
+}
+
+.fa-linkedin:hover{
+  color:#0e76a8;
+  background-position: center;
+  background-size: 10px!important;
+  background-repeat: no-repeat;
+  background:#fff;
+}
+
+@media (min-width: 1400px) {
+  .cardbone {
+    margin: 1rem 2rem;
+    width: 28rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cardbone {
+    margin: 1rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .carrosselone {
+    width: 70%;
+  }
+  .cardbone {
+    margin: 1rem 1rem;
+  }
+  .container-wtv {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardbone {
+    margin: .5rem .5rem;
+    width: 22rem;
+    height: 28rem;
+    padding: 2rem;
+  }
+.img-fluid img{
+    width: 8rem;
+    height: 15rem;
+  }
+  .carrosselone {
+    width: 30rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+  header {
+    border-radius: 0;
+    width: 100% !important; 
+    font-size: .8rem;
+  }
+  .resize img {
+    width: 70%;
+  }
+  .bannerpage {
+    flex-direction: column;
+  }
+
+  .banner-bg {
+    height: 110vh;
+  }
+
+  .textbanner {
+    width: 100%;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .carrosselone {
+    width: 70%;
+    align-items: center;
+    margin-top: 1rem;
+    margin: 1rem auto;
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  footer p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    font-size: .8rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .container-wtv {
+    margin-top: 1rem;
+    padding-top: 3rem;
+  }
+
+  .container-wtv .btn-danger {
+    font-size: .8rem !important;
+    height: 4rem !important;
+  }
+
+  .banner-bg {
+    height: 120vh;
+  }
+
+  .bannerpage {
+    flex-direction: column;
+  }
+
+  .textbanner {
+    width: 100%;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .carrosselone {
+    width: 100%;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+
+
 }

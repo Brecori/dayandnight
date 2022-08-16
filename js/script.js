@@ -1,5 +1,7 @@
+// Inicio esquema dia e noite
 $("#dn").change(function() {
     if(this.checked) {//Noite
+        
         $("#header").addClass("header-black");
         $("#header").removeClass("header-white");
         $("li, a").addClass("white-font");
@@ -10,7 +12,17 @@ $("#dn").change(function() {
         $("#main-background").removeClass("background-main-white");
         $("#main-background").addClass("white-font");
         $("#main-background").removeClass("black-font");
+        $("#market").addClass("white-font");
+        $("#market").removeClass("black-font");
+        $("#market").addClass("background-main-black");
+        $("#market").removeClass("background-main-white");
+        $("#all, #a, #b, #c, #d").removeClass("btn-primary");
+        $("#all, #a, #b, #c, #d").addClass("btn-secondary");
+
+
     }else{//Dia
+
+
         $("#header").addClass("header-white");
         $("#header").removeClass("header-black");
         $("li, a").addClass("black-font");
@@ -21,23 +33,33 @@ $("#dn").change(function() {
         $("#main-background").addClass("background-main-white");
         $("#main-background").removeClass("white-font");
         $("#main-background").addClass("black-font");
+        $("#market").addClass("black-font");
+        $("#market").removeClass("white-font");
+        $("#market").addClass("background-main-white");
+        $("#market").removeClass("background-main-black");
+        $("#all, #a, #b, #c, #d").addClass("btn-primary");
+        $("#all, #a, #b, #c, #d").removeClass("btn-secondary");
     }
 });
 
+// Fim esquema dia e noite
+
+// Inicio função scroll
 window.onscroll = function() {
         scroll();
     }
 
     function scroll() {
+
+        if (window.matchMedia("(min-width:992px)").matches){
         if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            
+
             document.getElementById("header").style.width = "100%";
             document.getElementById("header").style.borderRadius = "0";
             document.getElementById("header").style.position = "fixed";
             document.getElementById("header").style.marginTop = "6.5rem";
             document.getElementById("header").style.padding = ".3rem 2rem";
             document.getElementById("header").style.zIndex = "999";
-            document.getElementById("bannerpage").style.marginTop = "17rem";
             
         }
         else {
@@ -50,11 +72,34 @@ window.onscroll = function() {
             document.getElementById("bannerpage").style.marginTop = "6rem";
             
         }
+        }
+        else if (window.matchMedia("(min-width:765px)").matches) {
+          
+            document.getElementById("header").style.width = "100%";
+            document.getElementById("header").style.borderRadius = "0";
+            document.getElementById("header").style.position = "fixed";
+            document.getElementById("header").style.marginTop = "6.5rem";
+            document.getElementById("header").style.padding = ".3rem 2rem";
+            document.getElementById("header").style.zIndex = "999";
+            
+        
+        }
+        else if (window.matchMedia("(min-width:573px)").matches) {
+          
+            document.getElementById("header").style.width = "100%";
+            document.getElementById("header").style.borderRadius = "0";
+            document.getElementById("header").style.position = "fixed";
+            document.getElementById("header").style.marginTop = "7rem";
+            document.getElementById("header").style.padding = ".3rem 2rem";
+            document.getElementById("header").style.zIndex = "999";
+            
+        
+        }
     }
+// Fim Função Scroll
 
-    var myVar;
-    var bodybg = document.getElementById("bodybg");
-
+    
+// Inicio loader page 
     function loaderpage() {
         myVar = setTimeout(showPage, 0);
     }
@@ -64,23 +109,23 @@ window.onscroll = function() {
         bodybg.classList.remove("bg-black");
         document.getElementById("myDiv").style.display = "block";
     }
+// Fim loader page
 
+
+// Inicio Owl Carrossel
     $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
             loop: true,
             margin: 30,
-            nav: true,
-            dots:false,
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
-            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
             responsive: {
                 0: {
                     items: 1
                 },
-                600: {
-                    items: 3
+                700: {
+                    items: 2
                 },
                 1000: {
                     items: 3
@@ -89,7 +134,10 @@ window.onscroll = function() {
             
         })
     });
+// Fim Owl Carrossel 
 
+
+// Inicio Filter Div
 $(document).ready(function(){
     var $btns = $('.btn').click(function() {
         if (this.id == 'all') {
@@ -102,3 +150,13 @@ $(document).ready(function(){
         $(this).addClass('active-btn');
       })
 })
+// Fim Filter Div
+
+
+// Inicio Scroll To Top BTN
+function scrollToTop() {
+
+window.scrollTo({top: 0, behavior: 'smooth'});
+
+}
+// Fim Scroll To Top BTN
