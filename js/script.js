@@ -18,6 +18,8 @@ $("#dn").change(function() {
         $("#market").removeClass("background-main-white");
         $("#all, #a, #b, #c, #d").removeClass("btn-primary");
         $("#all, #a, #b, #c, #d").addClass("btn-secondary");
+        $(".offcanvas").addClass("header-black");
+        $(".offcanvas").removeClass("header-white");
 
 
     }else{//Dia
@@ -39,6 +41,8 @@ $("#dn").change(function() {
         $("#market").removeClass("background-main-black");
         $("#all, #a, #b, #c, #d").addClass("btn-primary");
         $("#all, #a, #b, #c, #d").removeClass("btn-secondary");
+        $(".offcanvas").addClass("header-white");
+        $(".offcanvas").removeClass("header-black");
     }
 });
 
@@ -155,6 +159,7 @@ $(document).ready(function(){
 
 // Inicio Scroll To Top BTN
 function scrollToTop() {
+
 
 window.scrollTo({top: 0, behavior: 'smooth'});
 
